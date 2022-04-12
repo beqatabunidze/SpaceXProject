@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  SpaceXProject
 //
-//  Created by Beqa Tabunidze on 12.04.22.
+//  Created by Beqa Tabunidze on 11.04.22.
 //
 
 import UIKit

@@ -9,21 +9,60 @@
 /* Begin PBXBuildFile section */
 		DCDE15AF28055B7800274E4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE15AE28055B7800274E4D /* AppDelegate.swift */; };
 		DCDE15B128055B7800274E4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE15B028055B7800274E4D /* SceneDelegate.swift */; };
-		DCDE15B328055B7800274E4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE15B228055B7800274E4D /* ViewController.swift */; };
-		DCDE15B628055B7800274E4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDE15B428055B7800274E4D /* Main.storyboard */; };
 		DCDE15B828055B7A00274E4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCDE15B728055B7A00274E4D /* Assets.xcassets */; };
 		DCDE15BB28055B7A00274E4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDE15B928055B7A00274E4D /* LaunchScreen.storyboard */; };
+		DCDE15F128055C1400274E4D /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE15CA28055C1400274E4D /* Ship.swift */; };
+		DCDE15F228055C1400274E4D /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE15CB28055C1400274E4D /* Launch.swift */; };
+		DCDE15F328055C1400274E4D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE15CE28055C1400274E4D /* NetworkManager.swift */; };
+		DCDE15F428055C1400274E4D /* UIVIewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE15D028055C1400274E4D /* UIVIewController + Extensions.swift */; };
+		DCDE15F528055C1400274E4D /* ShipsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE15D528055C1400274E4D /* ShipsViewModel.swift */; };
+		DCDE15F628055C1400274E4D /* ShipsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE15D628055C1400274E4D /* ShipsViewModelProtocol.swift */; };
+		DCDE15F728055C1400274E4D /* ShipsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE15D728055C1400274E4D /* ShipsDataSource.swift */; };
+		DCDE15F828055C1400274E4D /* ShipCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE15D928055C1400274E4D /* ShipCollectionViewCell.swift */; };
+		DCDE15F928055C1400274E4D /* ShipCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCDE15DA28055C1400274E4D /* ShipCollectionViewCell.xib */; };
+		DCDE15FA28055C1400274E4D /* ShipsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDE15DC28055C1400274E4D /* ShipsViewController.storyboard */; };
+		DCDE15FB28055C1400274E4D /* ShipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE15DD28055C1400274E4D /* ShipsViewController.swift */; };
+		DCDE15FC28055C1400274E4D /* LaunchesViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE15E028055C1400274E4D /* LaunchesViewModelProtocol.swift */; };
+		DCDE15FD28055C1400274E4D /* MissionsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE15E128055C1400274E4D /* MissionsDataSource.swift */; };
+		DCDE15FE28055C1400274E4D /* LaunchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE15E228055C1400274E4D /* LaunchesViewModel.swift */; };
+		DCDE15FF28055C1400274E4D /* EmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE15E528055C1400274E4D /* EmptyTableViewCell.swift */; };
+		DCDE160028055C1400274E4D /* EmptyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCDE15E628055C1400274E4D /* EmptyTableViewCell.xib */; };
+		DCDE160128055C1400274E4D /* MissionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCDE15E828055C1400274E4D /* MissionsTableViewCell.xib */; };
+		DCDE160228055C1400274E4D /* MissionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE15E928055C1400274E4D /* MissionsTableViewCell.swift */; };
+		DCDE160328055C1400274E4D /* MissionsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDE15EB28055C1400274E4D /* MissionsViewController.storyboard */; };
+		DCDE160428055C1400274E4D /* MissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE15EC28055C1400274E4D /* MissionsViewController.swift */; };
+		DCDE160528055C1400274E4D /* FetchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE15EE28055C1400274E4D /* FetchManager.swift */; };
+		DCDE160828055C7100274E4D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DCDE160728055C7100274E4D /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DCDE15AB28055B7800274E4D /* SpaceXProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDE15AE28055B7800274E4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCDE15B028055B7800274E4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DCDE15B228055B7800274E4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DCDE15B528055B7800274E4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCDE15B728055B7A00274E4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCDE15BA28055B7A00274E4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCDE15BC28055B7A00274E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCDE15CA28055C1400274E4D /* Ship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
+		DCDE15CB28055C1400274E4D /* Launch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
+		DCDE15CE28055C1400274E4D /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DCDE15D028055C1400274E4D /* UIVIewController + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIewController + Extensions.swift"; sourceTree = "<group>"; };
+		DCDE15D528055C1400274E4D /* ShipsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipsViewModel.swift; sourceTree = "<group>"; };
+		DCDE15D628055C1400274E4D /* ShipsViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipsViewModelProtocol.swift; sourceTree = "<group>"; };
+		DCDE15D728055C1400274E4D /* ShipsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipsDataSource.swift; sourceTree = "<group>"; };
+		DCDE15D928055C1400274E4D /* ShipCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipCollectionViewCell.swift; sourceTree = "<group>"; };
+		DCDE15DA28055C1400274E4D /* ShipCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShipCollectionViewCell.xib; sourceTree = "<group>"; };
+		DCDE15DC28055C1400274E4D /* ShipsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShipsViewController.storyboard; sourceTree = "<group>"; };
+		DCDE15DD28055C1400274E4D /* ShipsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipsViewController.swift; sourceTree = "<group>"; };
+		DCDE15E028055C1400274E4D /* LaunchesViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchesViewModelProtocol.swift; sourceTree = "<group>"; };
+		DCDE15E128055C1400274E4D /* MissionsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionsDataSource.swift; sourceTree = "<group>"; };
+		DCDE15E228055C1400274E4D /* LaunchesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchesViewModel.swift; sourceTree = "<group>"; };
+		DCDE15E528055C1400274E4D /* EmptyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyTableViewCell.swift; sourceTree = "<group>"; };
+		DCDE15E628055C1400274E4D /* EmptyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyTableViewCell.xib; sourceTree = "<group>"; };
+		DCDE15E828055C1400274E4D /* MissionsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MissionsTableViewCell.xib; sourceTree = "<group>"; };
+		DCDE15E928055C1400274E4D /* MissionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionsTableViewCell.swift; sourceTree = "<group>"; };
+		DCDE15EB28055C1400274E4D /* MissionsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MissionsViewController.storyboard; sourceTree = "<group>"; };
+		DCDE15EC28055C1400274E4D /* MissionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionsViewController.swift; sourceTree = "<group>"; };
+		DCDE15EE28055C1400274E4D /* FetchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCDE160828055C7100274E4D /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +96,202 @@
 		DCDE15AD28055B7800274E4D /* SpaceXProject */ = {
 			isa = PBXGroup;
 			children = (
+				DCDE15C228055B8F00274E4D /* App */,
+				DCDE15ED28055C1400274E4D /* API */,
+				DCDE15C528055C1400274E4D /* Domain */,
+				DCDE15D128055C1400274E4D /* Presentation */,
+				DCDE15CC28055C1400274E4D /* Infrastructure */,
+				DCDE15C328055BB700274E4D /* Resources */,
+				DCDE15C428055BBF00274E4D /* Supporting Files */,
+			);
+			path = SpaceXProject;
+			sourceTree = "<group>";
+		};
+		DCDE15C228055B8F00274E4D /* App */ = {
+			isa = PBXGroup;
+			children = (
 				DCDE15AE28055B7800274E4D /* AppDelegate.swift */,
 				DCDE15B028055B7800274E4D /* SceneDelegate.swift */,
-				DCDE15B228055B7800274E4D /* ViewController.swift */,
-				DCDE15B428055B7800274E4D /* Main.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DCDE15C328055BB700274E4D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				DCDE15B728055B7A00274E4D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DCDE15C428055BBF00274E4D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				DCDE15B928055B7A00274E4D /* LaunchScreen.storyboard */,
 				DCDE15BC28055B7A00274E4D /* Info.plist */,
 			);
-			path = SpaceXProject;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCDE15C528055C1400274E4D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				DCDE15C928055C1400274E4D /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		DCDE15C928055C1400274E4D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DCDE15CA28055C1400274E4D /* Ship.swift */,
+				DCDE15CB28055C1400274E4D /* Launch.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DCDE15CC28055C1400274E4D /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				DCDE15CD28055C1400274E4D /* Managers */,
+				DCDE15CF28055C1400274E4D /* Extensions */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		DCDE15CD28055C1400274E4D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				DCDE15CE28055C1400274E4D /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		DCDE15CF28055C1400274E4D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DCDE15D028055C1400274E4D /* UIVIewController + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DCDE15D128055C1400274E4D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				DCDE15D228055C1400274E4D /* Scenes */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		DCDE15D228055C1400274E4D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DCDE15D328055C1400274E4D /* Ships */,
+				DCDE15DE28055C1400274E4D /* Missions */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DCDE15D328055C1400274E4D /* Ships */ = {
+			isa = PBXGroup;
+			children = (
+				DCDE15D428055C1400274E4D /* ViewModel */,
+				DCDE15D828055C1400274E4D /* ShipsCell */,
+				DCDE15DB28055C1400274E4D /* View */,
+			);
+			path = Ships;
+			sourceTree = "<group>";
+		};
+		DCDE15D428055C1400274E4D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DCDE15D528055C1400274E4D /* ShipsViewModel.swift */,
+				DCDE15D628055C1400274E4D /* ShipsViewModelProtocol.swift */,
+				DCDE15D728055C1400274E4D /* ShipsDataSource.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DCDE15D828055C1400274E4D /* ShipsCell */ = {
+			isa = PBXGroup;
+			children = (
+				DCDE15D928055C1400274E4D /* ShipCollectionViewCell.swift */,
+				DCDE15DA28055C1400274E4D /* ShipCollectionViewCell.xib */,
+			);
+			path = ShipsCell;
+			sourceTree = "<group>";
+		};
+		DCDE15DB28055C1400274E4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DCDE15DC28055C1400274E4D /* ShipsViewController.storyboard */,
+				DCDE15DD28055C1400274E4D /* ShipsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DCDE15DE28055C1400274E4D /* Missions */ = {
+			isa = PBXGroup;
+			children = (
+				DCDE15DF28055C1400274E4D /* ViewModel */,
+				DCDE15E328055C1400274E4D /* Cells */,
+				DCDE15EA28055C1400274E4D /* View */,
+			);
+			path = Missions;
+			sourceTree = "<group>";
+		};
+		DCDE15DF28055C1400274E4D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DCDE15E228055C1400274E4D /* LaunchesViewModel.swift */,
+				DCDE15E028055C1400274E4D /* LaunchesViewModelProtocol.swift */,
+				DCDE15E128055C1400274E4D /* MissionsDataSource.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DCDE15E328055C1400274E4D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DCDE15E428055C1400274E4D /* EmptyCell */,
+				DCDE15E728055C1400274E4D /* MissionCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DCDE15E428055C1400274E4D /* EmptyCell */ = {
+			isa = PBXGroup;
+			children = (
+				DCDE15E528055C1400274E4D /* EmptyTableViewCell.swift */,
+				DCDE15E628055C1400274E4D /* EmptyTableViewCell.xib */,
+			);
+			path = EmptyCell;
+			sourceTree = "<group>";
+		};
+		DCDE15E728055C1400274E4D /* MissionCell */ = {
+			isa = PBXGroup;
+			children = (
+				DCDE15E828055C1400274E4D /* MissionsTableViewCell.xib */,
+				DCDE15E928055C1400274E4D /* MissionsTableViewCell.swift */,
+			);
+			path = MissionCell;
+			sourceTree = "<group>";
+		};
+		DCDE15EA28055C1400274E4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DCDE15EB28055C1400274E4D /* MissionsViewController.storyboard */,
+				DCDE15EC28055C1400274E4D /* MissionsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DCDE15ED28055C1400274E4D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				DCDE15EE28055C1400274E4D /* FetchManager.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +310,9 @@
 			dependencies = (
 			);
 			name = SpaceXProject;
+			packageProductDependencies = (
+				DCDE160728055C7100274E4D /* Kingfisher */,
+			);
 			productName = SpaceXProject;
 			productReference = DCDE15AB28055B7800274E4D /* SpaceXProject.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +341,9 @@
 				Base,
 			);
 			mainGroup = DCDE15A228055B7800274E4D;
+			packageReferences = (
+				DCDE160628055C7100274E4D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = DCDE15AC28055B7800274E4D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +358,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCDE160128055C1400274E4D /* MissionsTableViewCell.xib in Resources */,
 				DCDE15BB28055B7A00274E4D /* LaunchScreen.storyboard in Resources */,
+				DCDE160028055C1400274E4D /* EmptyTableViewCell.xib in Resources */,
+				DCDE15F928055C1400274E4D /* ShipCollectionViewCell.xib in Resources */,
+				DCDE160328055C1400274E4D /* MissionsViewController.storyboard in Resources */,
 				DCDE15B828055B7A00274E4D /* Assets.xcassets in Resources */,
-				DCDE15B628055B7800274E4D /* Main.storyboard in Resources */,
+				DCDE15FA28055C1400274E4D /* ShipsViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +375,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCDE15B328055B7800274E4D /* ViewController.swift in Sources */,
 				DCDE15AF28055B7800274E4D /* AppDelegate.swift in Sources */,
+				DCDE15FE28055C1400274E4D /* LaunchesViewModel.swift in Sources */,
+				DCDE160528055C1400274E4D /* FetchManager.swift in Sources */,
+				DCDE160228055C1400274E4D /* MissionsTableViewCell.swift in Sources */,
+				DCDE15FB28055C1400274E4D /* ShipsViewController.swift in Sources */,
+				DCDE15FD28055C1400274E4D /* MissionsDataSource.swift in Sources */,
+				DCDE15F528055C1400274E4D /* ShipsViewModel.swift in Sources */,
+				DCDE15F628055C1400274E4D /* ShipsViewModelProtocol.swift in Sources */,
 				DCDE15B128055B7800274E4D /* SceneDelegate.swift in Sources */,
+				DCDE15F328055C1400274E4D /* NetworkManager.swift in Sources */,
+				DCDE15FC28055C1400274E4D /* LaunchesViewModelProtocol.swift in Sources */,
+				DCDE15FF28055C1400274E4D /* EmptyTableViewCell.swift in Sources */,
+				DCDE15F228055C1400274E4D /* Launch.swift in Sources */,
+				DCDE15F428055C1400274E4D /* UIVIewController + Extensions.swift in Sources */,
+				DCDE15F128055C1400274E4D /* Ship.swift in Sources */,
+				DCDE15F828055C1400274E4D /* ShipCollectionViewCell.swift in Sources */,
+				DCDE160428055C1400274E4D /* MissionsViewController.swift in Sources */,
+				DCDE15F728055C1400274E4D /* ShipsDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DCDE15B428055B7800274E4D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DCDE15B528055B7800274E4D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DCDE15B928055B7A00274E4D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,10 +535,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WS2A29MDFR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SpaceXProject/Info.plist;
+				INFOPLIST_FILE = "SpaceXProject/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = ShipsViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,10 +564,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WS2A29MDFR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SpaceXProject/Info.plist;
+				INFOPLIST_FILE = "SpaceXProject/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = ShipsViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -360,6 +606,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DCDE160628055C7100274E4D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DCDE160728055C7100274E4D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCDE160628055C7100274E4D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DCDE15A328055B7800274E4D /* Project object */;
 }

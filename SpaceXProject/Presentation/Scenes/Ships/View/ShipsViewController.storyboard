@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BFa-ni-X4q">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ships -->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ShipsViewController" id="Y6W-OH-hqX" customClass="ShipsViewController" customModule="SpaceXProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3Pq-mT-Cn9">
+                                <rect key="frame" x="0.0" y="88" width="414" height="688"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ZpT-jg-pVF">
+                                    <size key="itemSize" width="106" height="95"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="nk4-Tc-Ld8">
+                                        <rect key="frame" x="0.0" y="0.0" width="106" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VPD-g4-NND">
+                                            <rect key="frame" x="0.0" y="0.0" width="106" height="95"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="106" height="95"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" id="jhW-Xe-XJs">
+                                <rect key="frame" x="0.0" y="104" width="414" height="688"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uH4-qJ-19R">
+                                <rect key="frame" x="0.0" y="776" width="414" height="120"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Tp9-MN-Rii"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="uey-X5-wpG">
+                                <rect key="frame" x="24" y="788" width="366" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4V8-Vg-nsh">
+                                        <rect key="frame" x="0.0" y="0.0" width="114" height="50"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="restart.circle" catalog="system" title=""/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lK-XX-eAo">
+                                        <rect key="frame" x="126" y="0.0" width="114" height="50"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOw-T6-vGQ">
+                                        <rect key="frame" x="252" y="0.0" width="114" height="50"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="goforward.plus" catalog="system" title="1.0x" imagePadding="5"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BYj-ne-LFT"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uH4-qJ-19R" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Ehq-e9-HR6"/>
+                            <constraint firstItem="uH4-qJ-19R" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="GSZ-op-LJw"/>
+                            <constraint firstAttribute="bottom" secondItem="uH4-qJ-19R" secondAttribute="bottom" id="VbC-mz-bjD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="uey-X5-wpG" secondAttribute="bottom" constant="24" id="XDe-4K-T0D"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="uey-X5-wpG" secondAttribute="trailing" constant="24" id="Z1k-Kr-aUq"/>
+                            <constraint firstItem="uey-X5-wpG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="dwK-eS-9nF"/>
+                            <constraint firstItem="uH4-qJ-19R" firstAttribute="top" secondItem="3Pq-mT-Cn9" secondAttribute="bottom" id="eld-9h-SgE"/>
+                            <constraint firstItem="3Pq-mT-Cn9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="jlc-AK-nxE"/>
+                            <constraint firstItem="3Pq-mT-Cn9" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="vws-Wd-WtT"/>
+                            <constraint firstItem="3Pq-mT-Cn9" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="ykS-kP-NaN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ships " id="FqB-T3-hnt">
+                        <barButtonItem key="backBarButtonItem" title=" " id="wmz-oA-D5i"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="beginButton" destination="4V8-Vg-nsh" id="GZa-hR-kIQ"/>
+                        <outlet property="collectionView" destination="3Pq-mT-Cn9" id="Z8B-fx-Apa"/>
+                        <outlet property="playButton" destination="8lK-XX-eAo" id="LJI-I7-Xh0"/>
+                        <outlet property="rewindButton" destination="hOw-T6-vGQ" id="Zle-tX-ZgC"/>
+                        <outlet property="spinner" destination="jhW-Xe-XJs" id="PhJ-tt-c15"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="138.61607142857142"/>
+        </scene>
+        <!--MissionsViewController-->
+        <scene sceneID="9SW-Ec-hrC">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MissionsViewController" storyboardName="MissionsViewController" referencedIdentifier="MissionsViewController" id="YGT-oN-syJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U5W-JM-unI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1807" y="140"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TQZ-0S-wWf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BFa-ni-X4q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tx8-R8-hZq">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="FGk-1Q-IJm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LnM-df-67u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="goforward.plus" catalog="system" width="121" height="128"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <image name="restart.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
