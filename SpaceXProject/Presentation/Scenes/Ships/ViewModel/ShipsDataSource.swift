@@ -26,6 +26,8 @@ class ShipsDataSource: NSObject {
     private var storyboard = UIStoryboard(name: "ShipsViewController", bundle: nil)
     private var navigationController = UINavigationController()
     
+    // class dependencies will be passed as constructor parameters using dependency injection
+    
     init(with collectionView: UICollectionView, viewModel: ShipsListViewModel, view: UIView, playButton: UIButton, restartButton: UIButton, speedUpButton: UIButton, storyboard: UIStoryboard, navigationController: UINavigationController) {
         super.init()
         
@@ -46,6 +48,8 @@ class ShipsDataSource: NSObject {
         self.navigationController = navigationController
     }
     
+    // refresh function will append fetched ships into shipList and reloads the collection view data
+    
     func refresh() {
         viewModel.getShipsList { ships in
             self.shipsList.append(contentsOf: ships)
@@ -53,15 +57,17 @@ class ShipsDataSource: NSObject {
         }
     }
     
+    // starts the timer and slideshow and sets the starting step interval to 1. isPaused boolean is used to determine wheather the slideshow is strated or not. Default value for isPaused is false.
+    
     func startTimer() {
-        
         timer = Timer.scheduledTimer(timeInterval: 1 / rewindStep, target: self, selector: #selector(self.slideShow), userInfo: nil, repeats: true);
         isPaused = false
         playButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
     }
     
+    // stops the timer but keeps the interval step in memory, when the user starts the timer again, it'll continue from where it left off.
+    
     func stopTimer() {
-        
         timer?.invalidate()
         timer = nil
         isPaused = true
@@ -70,17 +76,20 @@ class ShipsDataSource: NSObject {
     
     // MARK: - objc functions
     
+    // sets the starting collection view cell to 0, but does not affect the timer
+    
     @objc func backToBegin() {
-        
         cellIndex = 0
         collectionView.scrollToItem(at: IndexPath(item: cellIndex, section: 0), at: .right, animated: true)
     }
     
+    // implements stop and start timer functions. Dependent on isPaused value
+    
     @objc func startSlideshow() {
-        
         isPaused ? startTimer() : stopTimer()
-
     }
+    
+    // rewindStep variable is used to increase/decrease time interval. Starting value is 1, every time the user calls this function rewindStep increases by 1 till 5, then it resets to 1 again.
     
     @objc func timeRewind() {
         
@@ -111,6 +120,8 @@ class ShipsDataSource: NSObject {
         
     }
     
+    // responsible to calculate slidwshow direction and step amount
+    
     @objc func slideShow(){
         
         cellIndex < shipsList.count - 1 ? (cellIndex += 1) : (cellIndex = 0)
@@ -121,6 +132,8 @@ class ShipsDataSource: NSObject {
 }
 
 // MARK: - CollectionView setup
+
+// configure cells with fetched data
 
 extension ShipsDataSource: UICollectionViewDataSource {
     
@@ -142,6 +155,8 @@ extension ShipsDataSource: UICollectionViewDataSource {
     
 }
 
+// when Cell is clicked, by using an instance property, missions list is passed to MissionsViewController and MissionsViewController is being pushed to navigation stack
+
 extension ShipsDataSource: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -154,6 +169,8 @@ extension ShipsDataSource: UICollectionViewDelegate {
     }
     
 }
+
+// sets the collectionViewCell width and height
 
 extension ShipsDataSource: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

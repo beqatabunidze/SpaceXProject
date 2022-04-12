@@ -5,12 +5,15 @@
 //  Created by Beqa Tabunidze on 11.04.22.
 //
 
+// URLs
 enum SpaceXURL: String {
     case ship = "https://api.spacexdata.com/v3/ships"
     case launch = "https://api.spacexdata.com/v3/launches"
 }
 
 import Foundation
+
+// FetchManagerProtocol creates skeleton definitions for fetching ships and launches
 
 protocol FetchManagerProtocol: AnyObject {
     
@@ -41,5 +44,4 @@ class FetchManager: FetchManagerProtocol {
             }
         }
     }
-    
 }

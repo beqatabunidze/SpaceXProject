@@ -16,7 +16,7 @@ struct ShipsViewModel {
     }
     
     var name: String {
-        (ship.shipName ?? "") + " " + (ship.shipType ?? "")
+        (ship.shipName ?? "") + ", " + (ship.shipType ?? "")
     }
     
     var port: String {
@@ -24,16 +24,14 @@ struct ShipsViewModel {
     }
     
     var year: String {
-        "\(ship.yearBuilt ?? 0000)"
+        "\(ship.yearBuilt ?? 0)"
     }
     
     var imageURL: URL? {
-        
         URL(string: ship.image ?? "https://i.kym-cdn.com/entries/icons/original/000/027/100/_103330503_musk3.jpg")
     }
     
     var missionList: [ShipMission] {
         ship.missions!
     }
-
 }

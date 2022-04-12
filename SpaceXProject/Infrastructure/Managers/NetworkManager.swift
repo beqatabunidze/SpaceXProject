@@ -14,6 +14,7 @@ class NetworkManager {
     private init() {}
     
     func get<T: Codable>(url: String, completion: @escaping (Result<T, Error>) -> Void) {
+        
         guard let url = URL(string: url) else { return }
         
         var request = URLRequest(url: url)
